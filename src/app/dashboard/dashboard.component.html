@@ -1,0 +1,25 @@
+<div style="margin-top: 100px;background: white;margin-left: 20px;margin-right: 20px;">
+   <div class="row"> 
+   <div class="col-6">
+    <h2 style="font-weight: 600;">Campaign  Dashboard</h2>
+   </div>
+   <div class="col-6" style="display: flex;">
+    <h3>Post Campaign</h3>
+    <i class="fa fa-ellipsis-h" aria-hidden="true"  style="margin-right: 20px;"></i>
+    <i class="material-icons">notifications</i>
+   </div>
+   </div> 
+   <hr>
+<table>
+  <tr>
+    <th>Campaigns</th>
+    <th>Status</th>
+    <th>Applications</th>
+  </tr>
+  <tr *ngFor="let emp of employeeService.employees">
+    <td>{{emp.campaigns}}</td>
+    <td>{{emp.status}}</td>
+    <td style="color: blueviolet;">Edit Draft <i class="fa fa-ellipsis-v" aria-hidden="true"  style="margin-left: 20px;"></i></td>
+  </tr>
+</table>
+</div>
