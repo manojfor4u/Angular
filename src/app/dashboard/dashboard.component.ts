@@ -11,7 +11,7 @@ import { Employee } from '../shared/employee.model';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor(private employeeService: EmployeeService) { }
+  constructor(public employeeService: EmployeeService) { }
  
 
   ngOnInit() {
