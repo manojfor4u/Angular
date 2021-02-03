@@ -11,6 +11,11 @@ import {
   AgmCoreModule
 } from '@agm/core';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
+import { ProfileComponent } from './profile/profile.component';
+import { PixelComponent } from './pixel/pixel.component';
+import { LogoutComponent } from './logout/logout.component';
+import { DiscoveryComponent } from './discovery/discovery.component';
+import { LiveSupportComponent } from './live-support/live-support.component';
 
 @NgModule({
   imports: [
@@ -28,7 +33,6 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
   declarations: [
     AppComponent,
     AdminLayoutComponent,
-
   ],
   providers: [],
   bootstrap: [AppComponent]
