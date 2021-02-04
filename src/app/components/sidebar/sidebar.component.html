@@ -1,5 +1,5 @@
 <div class="logo">
-    <a class="simple-text">
+    <a class="simple-text" style="text-transform: lowercase;">
         <div class="logo-img">
             <img src="/assets/img/logo.png"/>
         </div>
@@ -10,7 +10,7 @@
     <ul class="nav">
         <li routerLinkActive="active" *ngFor="let menuItem of menuItems" class="{{menuItem.class}} nav-item">
             <a class="nav-link" [routerLink]="[menuItem.path]">
-                <i class="material-icons">{{menuItem.icon}}</i>
+                <i class="material-icons" >{{menuItem.icon}}</i>
                 <p style="font-weight: 600;">{{menuItem.title}}</p>
             </a>
         </li>
